@@ -14,13 +14,13 @@ fedora:
 sudo dnf install mono-complete -y
 ```
 
-pokud nejde:
+pokud neje:
 
 ```bash
 mono out.exe
 ```
 
-potom:
+potom (pro res/reseni.zip):
 
 ## moznost 1
 
@@ -29,9 +29,8 @@ mcs -r:System.Windows.Forms.dll -r:System.Drawing.dll res.cs -out:linux.exe -deb
 ```
 
 ## moznost 2
-
 ```bash
-cd zdrojove_kody; cp ../init.sh init.sh; sudo sh init.sh && source /etc/profile.d/00-aliases.sh;cs
+cd source_code; cp ../init.sh init.sh; sudo sh init.sh && source /etc/profile.d/00-aliases.sh;cs
 ```
 
 samostatne pak:
